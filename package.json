@@ -12,6 +12,7 @@
     "react": "16.0.0-alpha.12",
     "react-addons-update": "^15.6.0",
     "react-native": "0.46.3",
+    "react-native-actionsheet": "^2.2.0",
     "react-native-charts-wrapper": "^0.2.10",
     "react-native-router-flux": "^4.0.0-beta.12",
     "react-native-vector-icons": "^4.2.0"
