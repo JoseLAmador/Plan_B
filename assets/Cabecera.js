@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Tab, Tabs } from 'native-base';
+import {Actions} from 'react-native-router-flux';
 
 export default class Cabecera extends Component {
   render() {
@@ -13,10 +14,10 @@ export default class Cabecera extends Component {
             <Button transparent>
               <Icon name='pin' style={{color: 'green'}}/>
             </Button>
-            <Button transparent>
+            <Button transparent onPress={()=>Actions.Perfil()}>
               <Icon name='person' style={{color: 'green'}}/>
             </Button>
-            <Button transparent>
+            <Button transparent onPress={()=>Actions.Login()}>
               <Icon name='menu' style={{color: 'green'}}/>
             </Button>
           </Right>

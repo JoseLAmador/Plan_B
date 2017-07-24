@@ -5,7 +5,7 @@ import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left
 export default class tabTwo extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{backgroundColor: "white"}}>
         <Content>
           <Card style={{flex: 0}}>
             <CardItem>
@@ -34,7 +34,7 @@ export default class tabTwo extends Component {
               <Left>
                 <Thumbnail source={{uri: 'https://avatars1.githubusercontent.com/u/20559576?v=4&s=460'}} />
                 <Body>
-                  <Text>Noticia 1</Text>
+                  <Text>Noticia 2</Text>
                   <Text note>Mar 19 de Julio, 2016</Text>
                 </Body>
               </Left>
@@ -56,7 +56,7 @@ export default class tabTwo extends Component {
               <Left>
                 <Thumbnail source={{uri: 'https://avatars1.githubusercontent.com/u/20559576?v=4&s=460'}} />
                 <Body>
-                  <Text>Noticia 1</Text>
+                  <Text>Noticia 3</Text>
                   <Text note>Mar 19 de Julio, 2016</Text>
                 </Body>
               </Left>

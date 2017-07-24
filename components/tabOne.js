@@ -9,13 +9,13 @@ import {
   Icon,
   Button
 } from 'native-base';
+import {Actions} from 'react-native-router-flux';
 
 export default class tabOne extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{backgroundColor: "white"}}>
         <Content>
-
           <Card style={{
             alignItems: 'center',
             height: 250,
@@ -54,15 +54,15 @@ export default class tabOne extends Component {
           </Card>
 
           <View style={styles.align}>
-            <Button iconLeft transparent>
+            <Button iconLeft transparent onPress={()=>Actions.Ingresos()}>
               <Icon name='cash' />
                 <Text>Ingresos</Text>
             </Button>
-            <Button iconLeft transparent>
-              <Icon name='alert' />
+            <Button iconLeft transparent onPress={()=>Actions.Gastos()}>
+              <Icon name='alert'/>
                 <Text>Gastos</Text>
             </Button>
-            <Button iconLeft transparent>
+            <Button iconLeft transparent onPress={()=>Actions.Ahorros()}>
               <Icon name='beaker' />
                 <Text>Ahorros</Text>
             </Button>
