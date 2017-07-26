@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {StyleSheet, View, Image, TouchableOpacity} from 'react-native';
 import { Header,CheckBox,Button,Form, Right,Thumbnail, H1, Body,Label, Left, List, CardItem,Card, ListItem,Container, Content,Text, Item, Input, Icon } from 'native-base';
-import ActionSheet from 'react-native-actionsheet'
+import ActionSheet from 'react-native-actionsheet';
+import Imagen from './Imagen';
 
 const CANCEL_INDEX = 0
 const DESTRUCTIVE_INDEX = 4
@@ -36,13 +37,11 @@ class Perfil extends  Component{
       <Header/>
 
       <Content>
-      <View style={{backgroundColor:'rgb(0,0,0)', opacity:0.6}} >
-        <Image style={{justifyContent:'center',alignItems:'center', height:180,}} source={{uri: 'https://ae01.alicdn.com/kf/HTB1YU0LRVXXXXbUXXXXq6xXFXXXz/1PC-Personalise-Square-piggy-bank-Logbook-Series-font-b-Tin-b-font-Plate-box-font-b.jpg'}}/>
+      <View style={{ backgroundColor:'rgb(0,0,0)', opacity:0.6}} >
+        <Image style={{  justifyContent:'center',alignItems:'center', height:180,}} source={{uri: 'https://ae01.alicdn.com/kf/HTB1YU0LRVXXXXbUXXXXq6xXFXXXz/1PC-Personalise-Square-piggy-bank-Logbook-Series-font-b-Tin-b-font-Plate-box-font-b.jpg'}}/>
       </View>
-        <View style={{justifyContent:'center',alignItems:'center'}}   >
-          <Thumbnail style={{  zIndex:1, position:'absolute', top:-60, borderColor:'white',borderWidth:2.5}}  square large source={{uri:'https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png'}} />
+      <Imagen/>
 
-        </View>
       <List>
            <ListItem itemDivider>
              <Text>Info</Text>
